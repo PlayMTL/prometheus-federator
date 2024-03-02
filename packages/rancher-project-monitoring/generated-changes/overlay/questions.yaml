@@ -126,3 +126,8 @@ questions:
   default: true
   type: boolean
   group: Federation
+- variable: federate.ingressNginx.enabled
+  label: Enable Federated Metrics from "ingress_nginx_*"
+  default: true
+  type: boolean
+  group: Federation

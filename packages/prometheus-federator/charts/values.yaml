@@ -51,6 +51,10 @@ helmProjectOperator:
   valuesOverride:
 
     federate:
+      # Enable scraping of the ingress_nginx metrics for project namespaces
+      ingressNginx:
+        enabled: false
+
       # Change this to point at all Prometheuses you want all your Project Prometheus Stacks to federate from
       # By default, this matches the default deployment of Rancher Monitoring
       targets:
